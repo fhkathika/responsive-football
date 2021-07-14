@@ -83,6 +83,7 @@
     players detail styles 
     *************************/
     .players-detail-bonus-part-footer-section{
+      
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -157,14 +158,31 @@
   background-color:#FFFFFF; 
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 }
+
+/*****************
+bonus part 
+*********************/
+.tooltip .tooltiptext{
+  visibility: hidden;
+  
+}
+.tooltip:hover .tooltiptext{
+  visibility: visible;
+}
+table{
+  border-collapse: collapse;
+}
+td,th{
+  border: 1px solid gray;
+  padding: 5px;
+}
 .footer-part{
-  width: 483.87px;
-  height: 213px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
  
-  align-items: center;
+  display: flex;
+justify-content: center;
+ flex-direction: column;
+ align-items: center;
+
 }
 .footer-logo-part{
   width: 483.87px;
@@ -192,7 +210,7 @@
 .footer-icons{
 
   width: 170px;
-  height: 132px;
+  height: 32px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -213,3 +231,141 @@
   align-items: center;
   justify-content: center;
 }
+
+/*****************************
+ media quaries
+ *******************************/
+
+ /******************************
+  mobile devices
+ ********************************/
+
+     /***************************
+      for banner 
+      *******************************/
+
+   @media only screen and (max-width:688px){
+     .banner{
+       width: 100%;
+       height: 30%;
+       display: flex;
+       flex-direction: column;
+    }
+     .banner .banner-text-and-button .banner-title{
+       width: 100%;
+    margin-top: 10px;
+ }
+.banner-text-and-button button{
+   width: 60%;
+   margin-top: 50px;
+ }
+ .banner  .banner img{
+      width: 100%;
+   margin-top: 40px;
+   margin-left: 16px;
+    display: flex;
+     flex-direction: column;
+   
+    }
+    .banner:hover img{
+      transform: scale(1.1) ;
+      transition: transform 1s ease;
+    }
+     
+    /****************************************
+    players part 
+    ***************************************/
+
+    .players-detail-bonus-part-footer-section{
+        width: 100%;
+    }
+    .players-detail-part1{
+       
+        grid-template-columns: repeat(1,1fr);
+        flex-direction: column;
+    }
+    /* .players-detail-part1{
+      
+        
+    } */
+
+    .players-detail-part2-3-4{
+      display: flex;
+      align-items: center;
+      grid-template-columns: repeat(1,1fr);
+      flex-direction: column;
+      
+    }
+    /****************************
+     footer 
+     ********************************/
+    /* .footer-section, .footer-part{
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+      flex-wrap: wrap;
+     
+    } */
+}
+
+/**********************************
+ tablet device 
+ **********************************/
+
+@media only screen and (min-width: 688px) and (max-width: 922px){
+
+/************************* 
+banner part 
+****************************/
+.banner{
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+}
+
+ .banner-title{
+  display: flex;
+margin-left: 40px;
+  width: 50%;
+
+}
+.banner-text-and-button button{
+width: 50%;
+margin-top: 50px;
+margin-left: 40px;
+}
+ .banner-img  img{
+ width: 100%;
+display: flex;
+flex-direction: column;
+
+}
+.banner:hover img{
+ transform: scale(1.1) ;
+ transition: transform 1s ease;
+}
+
+  /***********************
+players part 
+********************************/
+  .players-detail-bonus-part-footer-section{
+      width: 100%;
+  }
+  .players-detail-part1{
+      grid-template-columns: repeat(2,1fr);
+      flex-direction: column;
+  }
+
+  .players-detail-part2-3-4{
+    display: flex;
+   
+   flex-wrap: wrap;
+   
+   
+    
+  }
+
+}
+   
+ 
