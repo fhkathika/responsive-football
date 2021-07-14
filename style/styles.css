@@ -247,7 +247,7 @@ justify-content: center;
    @media only screen and (max-width:688px){
      .banner{
        width: 100%;
-       height: 30%;
+       height: 20%;
        display: flex;
        flex-direction: column;
     }
@@ -278,6 +278,7 @@ justify-content: center;
 
     .players-detail-bonus-part-footer-section{
         width: 100%;
+        height: 4000px;
     }
     .players-detail-part1{
        
