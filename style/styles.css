@@ -1,7 +1,8 @@
 /**************
- google font 
+ google fonts
  ***************/
  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
 
  /***************
   common styles 
@@ -84,6 +85,7 @@
     .players-detail-bonus-part-footer-section{
       display: flex;
       flex-direction: column;
+      align-items: center;
 
     }
     .players-detail-part1, .players-detail-part2-3-4 {
@@ -154,4 +156,60 @@
   margin-top: 27px; 
   background-color:#FFFFFF; 
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.footer-part{
+  width: 483.87px;
+  height: 213px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+  align-items: center;
+}
+.footer-logo-part{
+  width: 483.87px;
+  height: 110px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30px;
+  
+  
+}
+.footer-logo-part .logo img{
+ width: 262.1px;
+ height: 110px;
+  
+}
+.footer-logo-text{
+  width: 227.82px;
+  height: 67.42px;
+  font-family: 'Niconne', cursive;
+  font-weight: 400;
+  font-size: 72.58px;
+  color: #10437A;
+}
+.footer-icons{
+
+  width: 170px;
+  height: 132px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ 
+}
+
+.footer-icons .icon{
+  display: flex;
+  width: 32px;
+  height: 32px;
+  background: #0b0d172a;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+ 
+}
+.footer-part .footer-copyright{
+  align-items: center;
+  justify-content: center;
 }
